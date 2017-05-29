@@ -4,7 +4,7 @@ FROM golang:1.8-alpine
 MAINTAINER Warnar Boekkooi <wbo@hellofresh.com>
 
 # Install dependencies
-RUN apk add --upgrade --no-cache jq curl git subversion openssh openssl mercurial \
+RUN apk add --upgrade --no-cache jq curl git subversion openssh openssl mercurial bash \
     && curl https://glide.sh/get | sh
 
 # Install git lfs
