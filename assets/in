@@ -112,7 +112,7 @@ for branch in $fetch; do
   git branch $branch FETCH_HEAD
 done
 
-glide install --ignore-platform-reqs --no-interaction --optimize-autoloader
+glide install
 
 if [ "$ref" == "HEAD" ]; then
   return_ref=$(git rev-parse HEAD)
